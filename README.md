@@ -35,11 +35,7 @@ Diseño básico con CSS
 
 Inicio de la lógica del juego en JavaScript
 
-Tasques pendents
-
-Implementar detección automática de ganador
-
-Implementar sistema de empate
+Añador sistema de empate
 
 Mejorar diseño visual
 
