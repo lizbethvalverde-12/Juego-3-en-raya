@@ -18,6 +18,37 @@ Gana el primero que consiga 3 símbolos en línea (horizontal, vertical).
 css/style.css
 JavaScript.js
 
+Estado actual del proyecto:
+
+Tasques realitzades:
+
+Creación del repositorio en GitHub ✓ 
+Vincular con Git ✓ 
+Estructura del proyecto creada ✓ 
+README creado ✓
+
+Tasques no realitzades:
+
+Tablero HTML implementado
+
+Diseño básico con CSS
+
+Inicio de la lógica del juego en JavaScript
+
+Tasques pendents
+
+Implementar detección automática de ganador
+
+Implementar sistema de empate
+
+Mejorar diseño visual
+
+Añadir mensaje final de partida
+
+Añadir botón de reinicio funcional
+
+Preparar despliegue en GitHub Pages
+
 
 
 
