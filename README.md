@@ -26,19 +26,16 @@ Creación del repositorio en GitHub ✓
 Vincular con Git ✓ 
 Estructura del proyecto creada ✓ 
 README creado ✓
+Problema resuelto✓
+Tablero HTML implementado✓✓
+Diseño básico con CSS✓
+Inicio de la lógica del juego en JavaScript✓
+Mejorar diseño visual✓
 
 Tasques no realitzades:
-
-Tablero HTML implementado
-
-Diseño básico con CSS
-
-Inicio de la lógica del juego en JavaScript
-
 Añador sistema de empate
-
-Mejorar diseño visual
-
+tabla 5x5
+tablero en todo la pantalla
 Añadir mensaje final de partida
 
 Añadir botón de reinicio funcional
