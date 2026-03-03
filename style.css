@@ -1,54 +1,59 @@
 body{
-    background-color:black;
-    color: white;
-    font-family: sans-serif;
-}
-
-h1, h2{
-    text-align: center;
+    margin:0;
+    background:black;
+    font-family:sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
 }
 
 h1{
-    font-size: 3em;
+    color:purple;
+    font-size:3em;
+    margin:10px;
+    text-align:center;
 }
 
-h2{
-    font-size: 2.5em;
+#mensaje{
+    color:lime;
+    font-size:2em;
+    height:40px;
+    margin:10px;
+    text-align:center;
+}
+
+.botones{
+    margin-bottom:20px;
+}
+
+.botones button{
+    padding:10px 20px;
+    margin:5px;
+    font-size:16px;
+    cursor:pointer;
 }
 
 #tablero{
-    margin:auto;
-    width: 750px;
-    max-width: 100%;
-    display: flex;
-    flex-wrap:wrap;
+    display:grid;
+    width:500px;           /* 🔥 tamaño FIJO */
+    height:500px;          /* 🔥 tamaño FIJO */
+    background:yellow;
+    margin-bottom:40px;
 }
-#tablero>button{
-    width: 250px;
-    height: 250px;
-    max-width: 33.33%;
-    font-size:10em;
+
+.casilla{
+    border:3px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;        /* 🔥 tamaño fijo */
+    font-weight:bold;
+    box-sizing:border-box; /* 🔥 evita que el borde cambie tamaño */
 }
-#textoVictoria{
-    visibility: hidden;
-    color:chartreuse;
-}
-.instrucciones{
-    color: greenyellow;
-    font-size: 20px;
-    margin-bottom:  15px;
-    font-weight: bold; /*texto en negrita*/
-    text-align: center;
-}
-#tres-por-tres{
-    color: rgb(82, 147, 16);
-    background-color: grey;
-    display: block;
-    margin:  auto;
-}
-#cinco-por-cinco{
-    color: rgb(82, 147, 16);
-    background-color: grey;
-    display: block;
-    margin:  auto;
+
+.ganadora{
+    background:green;
+    color:white;
 }
