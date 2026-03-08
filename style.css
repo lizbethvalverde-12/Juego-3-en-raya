@@ -37,8 +37,8 @@ h1{
 
 #tablero{
     display:grid;
-    width:500px;           /* 🔥 tamaño FIJO */
-    height:500px;          /* 🔥 tamaño FIJO */
+    width:500px;           
+    height:500px;          
     background:yellow;
     margin-bottom:40px;
 }
@@ -48,9 +48,9 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:60px;        /* 🔥 tamaño fijo */
+    font-size:60px;        /* tamaño fijo */
     font-weight:bold;
-    box-sizing:border-box; /* 🔥 evita que el borde cambie tamaño */
+    box-sizing:border-box; /*  evita que el borde cambie tamaño */
 }
 
 .ganadora{
