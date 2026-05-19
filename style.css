@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    background:black;
+    font-family:sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+h1{
+    color:purple;
+    font-size:3em;
+    margin:10px;
+    text-align:center;
+}
+
+#mensaje{
+    color:lime;
+    font-size:2em;
+    height:40px;
+    margin:10px;
+    text-align:center;
+}
+
+.botones{
+    margin-bottom:20px;
+}
+
+.botones button{
+    padding:10px 20px;
+    margin:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#tablero{
+    display:grid;
+    width:500px;           
+    height:500px;          
+    background:yellow;
+    margin-bottom:40px;
+}
+
+.casilla{
+    border:3px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;        /* tamaño fijo */
+    font-weight:bold;
+    box-sizing:border-box; /*  evita que el borde cambie tamaño */
+}
+
+.ganadora{
+    background:green;
+    color:white;
+}
