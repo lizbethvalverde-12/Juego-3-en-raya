@@ -38,7 +38,7 @@ function jugar(indice){
         document.getElementById("mensaje").textContent = "HAS GANADO";
         juegoTerminado = true;
         
-        // PUSE AQUÍ: Llamada al backend para guardar el punto cuando gana el jugador
+       
         actualizarPuntuacionBackend("jugador");
         return;
     }
@@ -64,7 +64,7 @@ function turnoOrdenador(){
         document.getElementById("mensaje").textContent = "HAS PERDIDO";
         juegoTerminado = true;
         
-        // PUSE AQUÍ: Llamada al backend para guardar el punto cuando gana la máquina
+      
         actualizarPuntuacionBackend("maquina");
     }
 }
@@ -155,12 +155,11 @@ function verificarGanador(){
     }
 
     return false;
-} // PUSE AQUÍ: He dejado esta llave cerrando correctamente verificarGanador
+} 
 
-// PUSE AQUÍ: La función ahora está suelta de manera independiente fuera de verificarGanador
-// FUNCIÓN PARA ENVIAR EL PUNTO AL BACKEND EN PHP
+
 function actualizarPuntuacionBackend(ganador) {
-    // Convertimos el parámetro en la palabra exacta que procesa tu PHP ('ganado' o 'perdido')
+  
     let resultadoEnvio = (ganador === "jugador") ? "ganado" : "perdido";
 
     fetch('../Backend/guardar_puntos.php', {
@@ -168,10 +167,10 @@ function actualizarPuntuacionBackend(ganador) {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        // Enviamos 'resultado' que es el estándar esperado por el script del backend
+        
         body: `resultado=${resultadoEnvio}`
     })
-    .then(response => response.text()) // Leemos la respuesta como texto para evitar fallos si el PHP no manda JSON puro
+    .then(response => response.text()) 
     .then(data => {
         console.log("Respuesta del backend al guardar puntos:", data);
     })

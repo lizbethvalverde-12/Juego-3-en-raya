@@ -48,9 +48,9 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:60px;        /* tamaño fijo */
+    font-size:60px;       
     font-weight:bold;
-    box-sizing:border-box; /*  evita que el borde cambie tamaño */
+    box-sizing:border-box; 
 }
 
 .ganadora{
@@ -58,22 +58,22 @@ h1{
     color:white;
 }
 
-/* NUEVO: Une el tablero y el marcador uno al lado del otro */
+
 .juego-flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Espacio de separación entre el tablero y los puntos */
+    gap: 40px; 
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Se adapta si la pantalla se hace más pequeña */
+    flex-wrap: wrap; 
 }
 
-/* NUEVO: Quita el margen viejo del tablero para que no se descuadre con el flex */
+
 #tablero {
     margin-bottom: 0px !important;
 }
 
-/* NUEVO: Diseño del cuadro de puntuación */
+
 .marcador-puntos {
     background-color: #111;
     border: 3px solid #333;
@@ -86,7 +86,7 @@ h1{
 }
 
 .marcador-puntos h3 {
-    color: purple; /* A juego con tu título H1 */
+    color: purple; 
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -99,15 +99,15 @@ h1{
     margin: 10px 0;
 }
 
-/* Colores vistosos para los números de los puntos */
+
 #puntos-ganados {
-    color: lime; /* A juego con tu mensaje de HAS GANADO */
+    color: lime; 
     font-weight: bold;
     font-size: 1.3em;
 }
 
 #puntos-perdidos {
-    color: #ff4d4d; /* Rojo brillante para derrotas */
+    color: #ff4d4d; 
     font-weight: bold;
     font-size: 1.3em;
 }

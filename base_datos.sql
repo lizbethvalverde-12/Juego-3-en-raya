@@ -1,4 +1,4 @@
--- Importa este archivo en phpMyAdmin antes de probar la aplicación.
+
 
 CREATE DATABASE IF NOT EXISTS juego_db
   CHARACTER SET utf8mb4
