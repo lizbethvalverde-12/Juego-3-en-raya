@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso - 3 en Raya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>3 EN RAYA</h1>
+        
+        <div id="alerta" class="alerta" style="display: none;"></div>
+
+        <div class="formularios-box">
+            
+            <div class="form-block">
+                <h2>Iniciar Sesión</h2>
+                <form action="../Backend/login.php" method="POST">
+                    <label for="login-user">Usuario:</label>
+                    <input type="text" id="login-user" name="username" required>
+                    
+                    <label for="login-pass">Contraseña:</label>
+                    <input type="password" id="login-pass" name="password" required>
+                    
+                    <button type="submit">Entrar a jugar</button>
+                </form>
+            </div>
+
+            <div class="form-block">
+                <h2>Crear Cuenta</h2>
+                <form action="../Backend/registro.php" method="POST">
+                    <label for="reg-user">Nuevo Usuario:</label>
+                    <input type="text" id="reg-user" name="username" required>
+                    
+                    <label for="reg-pass">Contraseña:</label>
+                    <input type="password" id="reg-pass" name="password" required>
+                    
+                    <button type="submit" class="btn-registro">Registrarme</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const alerta = document.getElementById('alerta');
+        
+        if (params.has('error')) {
+            alerta.style.display = 'block';
+            alerta.style.backgroundColor = '#ff4d4d';
+            alerta.textContent = params.get('error');
+        } else if (params.has('mensaje')) {
+            alerta.style.display = 'block';
+            alerta.style.backgroundColor = '#2ecc71';
+            alerta.textContent = params.get('mensaje');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+body{
+    margin:0;
+    background:black;
+    font-family:sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+h1{
+    color:purple;
+    font-size:3em;
+    margin:10px;
+    text-align:center;
+}
+
+#mensaje{
+    color:lime;
+    font-size:2em;
+    height:40px;
+    margin:10px;
+    text-align:center;
+}
+
+.botones{
+    margin-bottom:20px;
+}
+
+.botones button{
+    padding:10px 20px;
+    margin:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#tablero{
+    display:grid;
+    width:500px;           
+    height:500px;          
+    background:yellow;
+    margin-bottom:40px;
+}
+
+.casilla{
+    border:3px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;        /* tamaño fijo */
+    font-weight:bold;
+    box-sizing:border-box; /*  evita que el borde cambie tamaño */
+}
+
+.ganadora{
+    background:green;
+    color:white;
+}
+
+/* NUEVO: Une el tablero y el marcador uno al lado del otro */
+.juego-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espacio de separación entre el tablero y los puntos */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Se adapta si la pantalla se hace más pequeña */
+}
+
+/* NUEVO: Quita el margen viejo del tablero para que no se descuadre con el flex */
+#tablero {
+    margin-bottom: 0px !important;
+}
+
+/* NUEVO: Diseño del cuadro de puntuación */
+.marcador-puntos {
+    background-color: #111;
+    border: 3px solid #333;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    min-width: 180px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.marcador-puntos h3 {
+    color: purple; /* A juego con tu título H1 */
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.marcador-puntos p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Colores vistosos para los números de los puntos */
+#puntos-ganados {
+    color: lime; /* A juego con tu mensaje de HAS GANADO */
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#puntos-perdidos {
+    color: #ff4d4d; /* Rojo brillante para derrotas */
+    font-weight: bold;
+    font-size: 1.3em;
+}

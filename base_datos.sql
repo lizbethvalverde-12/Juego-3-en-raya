@@ -1,0 +1,15 @@
+-- Importa este archivo en phpMyAdmin antes de probar la aplicación.
+
+CREATE DATABASE IF NOT EXISTS juego_db
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE juego_db;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  victorias_jugador INT NOT NULL DEFAULT 0,
+  victorias_maquina INT NOT NULL DEFAULT 0
+) ENGINE=InnoDB;
