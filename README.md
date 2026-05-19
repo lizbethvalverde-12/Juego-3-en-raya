@@ -43,6 +43,13 @@ Añadir botón de reinicio funcional
 Preparar despliegue en GitHub Pages
 
 
+Nuevas funciones
+
+-Sistema de login y registro
+
+-Sistema de puntaje guardado 
+
+
 
 
 
